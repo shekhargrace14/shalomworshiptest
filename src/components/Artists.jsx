@@ -8,7 +8,6 @@ const Artist = ({toggleMenu}) => {
   const artistData = useGetArtists();
   const urlSlug = usePathname();
   // console.log(artistData.data, "ArtistData log")  
-
   return (
     <section className="w-full flex flex-col gap-2">
       {artistData?.data?.length > 0 ? (
